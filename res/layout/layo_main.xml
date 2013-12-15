@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" >
+
+    <TextView
+        android:id="@+id/layo_main_tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:text="@string/layo_main_logo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <AutoCompleteTextView
+        android:id="@+id/layo_main_actv_city_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layo_main_tv_logo"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="24dp"
+        android:completionThreshold="2"
+        android:ems="10"
+        android:hint="@string/layo_main_enter_city_from" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:id="@+id/layo_main_actv_city_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layo_main_actv_city_from"
+        android:layout_below="@+id/layo_main_actv_city_from"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:completionThreshold="2"
+        android:hint="@string/layo_main_enter_city_to" />
+
+    <EditText
+        android:id="@+id/layo_main_et_departure_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layo_main_actv_city_to"
+        android:layout_below="@+id/layo_main_actv_city_to"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/layo_main_departure_day"
+        android:inputType="date" />
+
+    <ImageButton
+        android:id="@+id/layo_main_ib_departure_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layo_main_et_departure_day"
+        android:layout_alignTop="@+id/layo_main_et_departure_day"
+        android:layout_toRightOf="@+id/layo_main_et_departure_day"
+        android:contentDescription="@string/layo_main_departure_day"
+        android:src="@android:drawable/ic_menu_my_calendar" />
+
+    <Button
+        android:id="@+id/layo_main_bt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layo_main_et_departure_day"
+        android:layout_below="@+id/layo_main_et_departure_day"
+        android:layout_marginTop="44dp"
+        android:text="@string/layo_main_search" />
+
+</RelativeLayout>

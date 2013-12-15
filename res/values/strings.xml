@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoEuroTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="layo_main_enter_city_from">Enter city from</string>
+    <string name="layo_main_enter_city_to">Enter city to</string>
+    <string name="layo_main_departure_day">Departure Day</string>
+    <string name="layo_main_logo">GoEuro</string>
+    <string name="layo_main_search">Search</string>
+
+</resources>
